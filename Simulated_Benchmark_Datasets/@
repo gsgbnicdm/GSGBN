@@ -1,0 +1,11 @@
+Those eight datasets are simulated from the Bayesian Network Repository (http://www.bnlearn.com/)
+For details of simulation please refer to our paper.
+
+*Please DO NOT standardized the datasets because:
+We generate the regression parameter matrix (B) and data matrix (X) from the original network 
+with only known skeleton. If we normalize the data, the parameter (B) may change.
+
+e.g. 
+
+If you want to run the Water dataset (50 samples, 28 variables)
+please type, 

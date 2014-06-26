@@ -1,0 +1,19 @@
+Those eight datasets are simulated from the Bayesian Network Repository (http://www.bnlearn.com/)
+For details of simulation please refer to our paper.
+
+*Please DO NOT standardized the datasets because:
+We generate the regression parameter matrix (B) and data matrix (X) from the original network 
+with only known skeleton. If we normalize the data, the parameter (B) may change.
+
+Example:
+If you want to run the Water dataset (50 samples, 28 variables),
+please type:
+GSGBN -i Water.txt -l1 1.0 -l2 0.1 -n 10 -thr 0.1 
+
+You can also try different parameters (cross validation) to choose the best model.
+
+*Note:
+After you run the GSGBN and obtain the parameter matrix, please filter out those edges with regression coefficients less than 0.3. 
+For details, please refer to our paper.
+
+If you want to test more datasets, please refer to http://www.bnlearn.com/. 

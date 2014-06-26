@@ -1,0 +1,17 @@
+This is a sampled version of microbial dataset from The ICoMM project (The International Census of Marine Microbes).
+
+The "OTUTop50.txt" and "OTUTop100.txt" contain the matrix for top 50 and top 100 abundant OTUs ((operational taxonomy units) for the this dataset.
+Each row of the matrix represents a sample and each column represents the abundance of an OTU.
+
+*Please standardized the dataset with zero mean and unit variance before you run GSGBN.
+
+Example: 
+
+Standardized the dataset with zero mean and unit variance.
+Random pick 200 samples (e.g. input200.txt) for training the model, the last 71 samples for testing.
+
+GSGBN -i input200.txt -l1 20.0 -l2 5.0 -num 5 -thr 0.01
+
+lambda1 = 20.0 is for sparsity, lambda2 = 5.0 * n (e.g. 50, 100) for grouping, 0.01 is the threshold for filtering. 
+
+For more details about the dataset, please refer to ICoMM project website (http://icomm.mbl.edu). 
